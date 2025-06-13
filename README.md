@@ -2,7 +2,7 @@
 
 This relational database system manages data related to departments, faculty members, students, courses, and exams at a university. It supports academic operations like course offerings, faculty assignments, and exam management.
 
----
+
 
 ## 🏛️ Database Tables Overview
 
@@ -14,7 +14,7 @@ This relational database system manages data related to departments, faculty mem
 | dept_name   | VARCHAR    | Name of the department                |
 | head_id     | INT (FK)   | Faculty member heading the department (refers to `faculty.faculty_id`) |
 
----
+
 
 ### 📁 `faculty` Table
 
