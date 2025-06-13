@@ -24,7 +24,7 @@ This relational database system manages data related to departments, faculty mem
 | name        | VARCHAR    | Faculty name                          |
 | designation | VARCHAR    | Designation (e.g., Professor, HOD)    |
 
----
+
 
 ### 📁 `course` Table
 
@@ -34,7 +34,7 @@ This relational database system manages data related to departments, faculty mem
 | title       | VARCHAR       | Name/title of the course                    |
 | dept_id     | INT (FK)      | Department offering the course (`department.dept_id`) |
 
----
+
 
 ### 📁 `student` Table
 
@@ -59,7 +59,7 @@ This relational database system manages data related to departments, faculty mem
 | course_code  | VARCHAR (FK)  | Course the exam is for (`course.course_code`) |
 | faculty_id   | INT (FK)      | Creator of the exam (`faculty.faculty_id`)    |
 
----
+
 
 ## 🔗 Relationships
 
@@ -69,7 +69,7 @@ This relational database system manages data related to departments, faculty mem
 - An **exam** is linked to both a **course** and its **faculty** creator.
 - A **student** belongs to one **department**.
 
----
+
 
 ## 🛠️ Features & Concepts Used
 
@@ -78,7 +78,7 @@ This relational database system manages data related to departments, faculty mem
 - Data normalization
 - Academic data integrity enforcement
 
----
+
 
 ## 📌 Use Case Examples
 
@@ -88,7 +88,6 @@ This relational database system manages data related to departments, faculty mem
 - Query students by department
 - Retrieve internal vs. external exam data
 
----
 
 ## 🚀 Sample Queries You Can Run
 
@@ -107,6 +106,6 @@ JOIN department ON student.dept_id = department.dept_id
 WHERE department.dept_name = 'Mechanical';
 ```
 
----
+
 
 
